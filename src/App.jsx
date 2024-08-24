@@ -50,6 +50,7 @@ function App() {
               <a
                 className="bottom-info"
                 href="https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en&pli=1"
+                target="__blank"
               >
                 You will be needing MetaMask in your Browser <GrInstallOption />
               </a>
