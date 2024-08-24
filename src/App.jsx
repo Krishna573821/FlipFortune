@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
 import "./App.css";
-import CoinFlip from "./Coinflip.jsx";
+import CoinFlip from "./components/Coinflip.jsx";
 import img from "../src/assets/images/background.jpg";
 import logo from "../src/assets/images/logo.png";
 function App() {
