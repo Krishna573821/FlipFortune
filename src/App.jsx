@@ -38,14 +38,13 @@ function App() {
     <div className="App">
       <img src={img} alt="background image" />
       {!wallet.address ? (
-        <center className="center-content">
+        <center className="center-content floating-content ">
           <h1>FlipFortune</h1>
           <button onClick={connectWallet}>Connect Wallet</button>
         </center>
       ) : (
         <>
-          <div className="title">
-            {" "}
+          <div className="title" onClick={() => window.location.reload()}>
             <img className="logo" src={logo} alt="logo" /> FlipFortune
           </div>
           <div className="balance">

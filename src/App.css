@@ -37,10 +37,25 @@ body {
   justify-content: center;
 }
 
+.floating-content {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  animation: float 10s infinite linear;
+}
+
+@keyframes float {
+  50% {
+    top: 48%;
+  }
+}
+
 h1 {
   font-size: 5rem;
   margin-bottom: 2rem;
   text-shadow: 4px 4px 0px #4a82ea;
+  letter-spacing: 2px;
 }
 
 .title {
