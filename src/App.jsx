@@ -35,30 +35,37 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <img src={img} alt="background image" />
-      {!wallet.address ? (
-        <center className="center-content floating-content ">
-          <h1>FlipFortune</h1>
-          <button onClick={connectWallet}>Connect Wallet</button>
-        </center>
-      ) : (
-        <>
-          <div className="title" onClick={() => window.location.reload()}>
-            <img className="logo" src={logo} alt="logo" /> FlipFortune
-          </div>
-          <div className="balance">
-            <strong>Balance:</strong>
-            <span className="amount">
-              {wallet.balance ? `${wallet.balance} ETH` : "Loading..."}
-            </span>
-          </div>
-          <div className="center-content">
-            <CoinFlip wallet={wallet} setWallet={setWallet} />
-          </div>
-        </>
-      )}
-    </div>
+    <>
+      <div className="App">
+        <img src={img} alt="background image" />
+        {!wallet.address ? (
+          <>
+            <center className="center-content floating-content ">
+              <h1>FlipFortune</h1>
+              <button onClick={connectWallet}>Connect Wallet</button>
+            </center>
+            <h4 className="bottom-info">
+              You will be needing MetaMask in your Browser
+            </h4>
+          </>
+        ) : (
+          <>
+            <div className="title" onClick={() => window.location.reload()}>
+              <img className="logo" src={logo} alt="logo" /> FlipFortune
+            </div>
+            <div className="balance">
+              <strong>Balance:</strong>
+              <span className="amount">
+                {wallet.balance ? `${wallet.balance} ETH` : "Loading..."}
+              </span>
+            </div>
+            <div className="center-content">
+              <CoinFlip wallet={wallet} setWallet={setWallet} />
+            </div>
+          </>
+        )}
+      </div>
+    </>
   );
 }
 

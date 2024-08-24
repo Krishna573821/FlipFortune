@@ -54,7 +54,7 @@ body {
 h1 {
   font-size: 5rem;
   margin-bottom: 2rem;
-  text-shadow: 4px 4px 0px #4a82ea;
+  text-shadow: 4px 4px 0px #4a82ea, -4px -4px 5px #4a82ea;
   letter-spacing: 2px;
 }
 
@@ -104,4 +104,13 @@ button:hover {
 .amount {
   color: yellow;
   margin-left: 1rem;
+}
+
+
+.bottom-info{
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  letter-spacing: 2px;
+  color: yellowgreen;
 }
