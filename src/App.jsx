@@ -4,6 +4,8 @@ import "./App.css";
 import CoinFlip from "./components/Coinflip.jsx";
 import img from "../src/assets/images/background.jpg";
 import logo from "../src/assets/images/logo.png";
+import { GrInstallOption } from "react-icons/gr";
+
 function App() {
   const [wallet, setWallet] = useState({
     address: "",
@@ -44,8 +46,13 @@ function App() {
               <h1>FlipFortune</h1>
               <button onClick={connectWallet}>Connect Wallet</button>
             </center>
-            <h4 className="bottom-info">
-              You will be needing MetaMask in your Browser
+            <h4>
+              <a
+                className="bottom-info"
+                href="https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en&pli=1"
+              >
+                You will be needing MetaMask in your Browser <GrInstallOption />
+              </a>
             </h4>
           </>
         ) : (

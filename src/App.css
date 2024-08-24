@@ -113,4 +113,6 @@ button:hover {
   right: 0.5rem;
   letter-spacing: 2px;
   color: yellowgreen;
+  text-decoration: none;
 }
+
